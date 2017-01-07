@@ -21,7 +21,7 @@ Nodes with `isEnd` flag is marked with double round. We see 13 nodes(including e
 
 As we can see 'John' name stops on 'N' character, however we have more long 'Johnny' name, that's why we have one more pointer to another character of 'John**n**y' name (next 'N' character). So `isEnd` flags doesn't mean the end of all words started with that prefix.
 
-`Trie` class contain two methods:
+`Trie` class contain three methods:
  - *insert* new word
  - *PrefixSearch* word with specified prefix
  - *PrintChildern* print all possible paths for specified node
