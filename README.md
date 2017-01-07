@@ -27,7 +27,7 @@ As we can see 'John' name stops on 'N' character, however we have more long 'Joh
 
 `Trie::insert` try to find if the trie is already contain this word or part of word. We iterate thought character and try to find any children of current node with iterating character. If there is no more children, we find the parent node which represents the longest word of trie as a part of inserting word. After that, if we still have some non-iterating character we add them into the trie. And marked the last character in the trie with `isEnd` flag.
 
-`Trie::PrefixSearch` firstly try to find the last node which corresponds the full prefix as every node holde character and path of the previous nodes
+`Trie::PrefixSearch` Firstly try to find the last node which corresponds the full prefix as every node holde character and path of the previous nodes.Secondly call PrintChildern to get all paths 
 
 `Trie::PrintChildern`Print all of the results that taken from PrefixSearch'
 ## Usage
