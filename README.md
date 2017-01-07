@@ -12,13 +12,13 @@ For example:
 ![alt text](https://github.com/mohammedgmgn/AutoCompleateME/blob/master/img/trie.png "Trie example")
 
 Nodes with `isEnd` flag is marked with double round. We see 13 nodes(including empty root node), which represent 5 names:
- - Joe
- - John
- - Johnny
- - Jane
- - Jack
+ - Joe 5
+ - John 10
+ - Johnny 18
+ - Jane 20 
+ - Jack 12
 
-As we can see 'John' name stops on 'N' character, however we have more long 'Johnny' name, that's why we have one more pointer to another character of 'John**n**y' name (next 'N' character). So `isEnd` flags doesn't mean the end of all words started with that prefix.
+As we can see 'John' name stops on 'N' character, however we have more long 'Johnny' name, that's why we have one more pointer to another character of 'John**n**y' name (next 'N' character). So `isEnd` flags doesn't mean the end of all words started with that prefix.the number expresses the weight of each word as we are using 2 different algorithm for sorting by weight
 
 `Trie` class contain three methods:
  - *insert* new word
