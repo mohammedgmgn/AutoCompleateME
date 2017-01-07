@@ -30,7 +30,7 @@ As we can see 'John' name stops on 'N' character, however we have more long 'Joh
 `Trie::PrefixSearch` firstly try to find the last node which corresponds the full prefix as every node holde character and path of the previous nodes
 
 `Trie::PrintChildern`Print all of the results that taken from PrefixSearch'
-
+## Usage
 One of the possible way to fill trie is using dictionary
 ```c#
  string[] words = System.IO.File.ReadAllLines(@"D:\New folder\Large\Dictionary (Large).txt"); // Read all words from dictionary
